@@ -1,0 +1,16 @@
+:root {
+	color: #202C39;
+	background-color: #F1F7ED;
+	/*
+	#A53860;
+	https://coolors.co/00b2ca-f1f7ed-f79256-870058-202c39
+	#F79256;
+	#00B2CA;
+	*/
+	font-size: 1em;
+	font-family: Arial;
+}
+
+h1 {
+	text-align: center;
+}
