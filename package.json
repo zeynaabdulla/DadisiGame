@@ -1,1 +1,20 @@
-{}
+{
+  "name": "dadisigame",
+  "description": "",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeynaabdulla/DadisiGame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeynaabdulla/DadisiGame/issues"
+  },
+  "homepage": "https://github.com/zeynaabdulla/DadisiGame#readme"
+}
