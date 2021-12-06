@@ -21,6 +21,7 @@ var config = {
 };
 
 const game = new Phaser.Game(config);
+let playerSprite;
 
 function preload() {
   this.load.image("tiles", "first-area.png");
@@ -42,10 +43,10 @@ function create() {
     const layer = firstAreaTileMap.createLayer(i, "First Area", 0, 0);
     layer.scale = 3;
   }
-  const playerSprite = this.add.sprite(0, 0, "player");
-  playerSprite.scale = 1;
-  // this.cameras.main.startFollow(playerSprite, true);
-  // this.cameras.main.setFollowOffset(-playerSprite.width, -playerSprite.height);
+  playerSprite = this.add.sprite(0, 0, "player");
+  playerSprite.scale = 1.5;
+  this.cameras.main.startFollow(playerSprite, true);
+  this.cameras.main.setFollowOffset(-playerSprite.width, -playerSprite.height);
 
   const gridEngineConfig = {
   	characters: [
@@ -60,12 +61,17 @@ function create() {
 
   this.gridEngine.create(firstAreaTileMap, gridEngineConfig);
   const background = this.add.image(480, 480, 'tiles');
-	background.scale = 1;
+	background.scale = 1.5;
   const goalSprite = this.add.image(430, 430, "goal");
+	goalSprite.scale = 1.5;
 
 }
 
 function update() {
+	if (playerSprite.x > 407 && playerSprite.y < 409
+		&& playerSprite.y > 397 && playerSprite.y < 399) {
+			window.location.href = "wade-2/index.html";
+	}
   const cursors = this.input.keyboard.createCursorKeys();
   if (cursors.left.isDown) {
     this.gridEngine.move("player", "left");
