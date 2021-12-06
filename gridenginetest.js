@@ -68,8 +68,7 @@ function create() {
 }
 
 function update() {
-	if (playerSprite.x > 407 && playerSprite.y < 409
-		&& playerSprite.y > 397 && playerSprite.y < 399) {
+	if (playerSprite.x > 407 && playerSprite.y < 409 && playerSprite.y > 397 && playerSprite.y < 399) {
 			window.location.href = "wade-2/index.html";
 	}
   const cursors = this.input.keyboard.createCursorKeys();
