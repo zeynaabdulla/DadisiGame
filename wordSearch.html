@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Word search game</title>
+    <link rel="stylesheet" href="css/wordsearch.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <h1 class="logo">Word search game</h1>
+      <h2> Find the words to help Maya! </h2>
+      <p>
+        <b>"Integers"</b> are the whole numbers that you see and count everyday, like 1, 2, 3, and 4!
+        <br>
+        <b>"String"</b> is another word for... words! They represent letters, words, and mixtures of different numbers and letters.
+        <br>
+        "Apple", "Video game", and "ABC123" are all <b> strings!</b>
+        <br>
+        <b>"Booleans"</b> represent things that are true or false.
+        <br>
+        <b>"Doubles"</b> are another word for decimal or fraction numbers, like 1.2, 2.5, and 1/2.
+        <br>
+        <b>"Code"</b> is what programmers like Maya write to create cool things like phone apps, websites, and even games!
+      </p>
+      <section id="ws-area"></section>
+      <ul class="ws-words"></ul>
+    </div>
+    <script src="js/utility.min.js"></script>
+    <script src="js/wordsearch.min.js"></script>
+    <script type="text/javascript">
+      var gameAreaEl = document.getElementById('ws-area');
+      var gameobj = gameAreaEl.wordSearch();
+      // Put words into `.ws-words`
+      var words = gameobj.settings.wordsList,
+        wordsWrap = document.querySelector('.ws-words');
+      for (i in words) {
+        var liEl = document.createElement('li');
+        liEl.setAttribute('class', 'ws-word');
+        liEl.innerText = words[i];
+        wordsWrap.appendChild(liEl);
+      }
+    </script>
+  </body>
+</html>
