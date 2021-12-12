@@ -4,7 +4,7 @@ body, h1 {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 10;
-  background-image: url("wordSearchBackground.png");
+  background-color: lightblue;
 }
 
 h1 {
@@ -51,8 +51,11 @@ p {
 }
 
 .ws-words {
+  list-style: circle;
+  border: dotted white 2px;
+  border-radius: 10px;
+
   margin-left: 20px;
-  text-align: left;
 }
 
 .ws-word {
