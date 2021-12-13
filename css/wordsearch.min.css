@@ -11,6 +11,10 @@
     -ms-user-select: none;
   }
   
+  button {
+    margin-top: 10px;
+  }
+  
   .ws-row {
     line-height: 0;
   }

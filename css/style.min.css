@@ -15,9 +15,14 @@ body {
   color: #333;
 }
 
+
 p {
   padding: 10px;
   margin: 20;
+}
+
+button {
+  margin-top: 10px;
 }
 .fix {
   *zoom: 1;

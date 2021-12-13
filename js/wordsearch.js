@@ -373,7 +373,8 @@
       overlay.innerHTML = "<div class='ws-game-over-inner' id='ws-game-over-inner'>"+
                             "<div class='ws-game-over' id='ws-game-over'>"+
                               "<h2>Congratulations!</h2>"+
-                              "<p>You've found all of the words!</p>"+
+                              "<p>You've found all of the words!</p>" +
+                              "<a href='drag.html'><button>Continue</button></a>" +
                             "</div>"+
                           "</div>";
   }
