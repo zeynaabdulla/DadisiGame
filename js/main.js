@@ -33,7 +33,7 @@ function init(width, height) {
 
 	// load assets
 	background = new Image();
-	background.src = "./first-area.png";
+	background.src = "assets/first-area.png";
 	background.onload = function() {
 		ctx.drawImage(background, 0, 0);
 	}
