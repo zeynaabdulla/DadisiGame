@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Sans+3&display=swap');
 
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 body, h1 {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
