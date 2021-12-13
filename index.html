@@ -37,23 +37,12 @@
 			
 			
 		}
-		button {
-			position:fixed;
-			right:98%;
-			font-family: 'Press Start 2P', cursive;
-			border: none;
-			appearance: none;
-			outline: none;
-			cursor: pointer;
-			text-decoration: none;
-			padding: 12px 48px 12px 48px;
-			border-radius: 4px;;
-			background-color: none;
-			font-size: 20px;
-			transition-duration: 0.4s;
+		h2 {
+			font-family: monospace, sans-serif;
+	
 
 		}
-		button:hover {
+		h2:hover {
 			font-size: 20px;
 			background-color: #05c46b;
 		}
@@ -64,11 +53,14 @@
 	</style>
 	</head> 
 	<body>
+		
 		<div id = 'start-screen' class="box" style = 'display: block;'>
 			<img src="img/startScreen.png" alt="startScreen">
 			<div class="text">
 				<h1>Code with Maya</h1>
-				<button type="button" onclick="window.location.href='main.html'">Start Game</button>
+				<a href="main.html">
+					<h2>Start Game</h2>
+				</a>
 			</div>
 		</div>
 	</body>
