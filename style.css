@@ -1,0 +1,111 @@
+body {
+    background:salmon;
+}
+h1, h3, b {
+    font-family: monospace;
+    position: center;
+    padding: 1px 4px;
+}
+button {
+    position:right;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 48px 12px 48px;
+    border-radius: 4px;;
+    background-color: none;
+    font-size: 20px;
+    transition-duration: 0.4s;
+
+}
+button:hover {
+    font-size: 20px;
+    background-color: #05c46b;
+}
+
+
+br {
+    padding: 50px;
+}
+
+
+.fill {
+    height: 60px;
+    width: 150px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+#first {
+    background-image: url('img/string.png');
+    height: 60px;
+    width: 180px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+
+}
+#second {
+    background-image: url('img/double.png');
+    height: 60px;
+    width: 180px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+
+}
+#third {
+    background-image: url('img/bool.png');
+    height:60px;
+    width: 155px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+
+}
+#fourth {
+    background-image: url('img/int.png');
+    height: 60px;
+    width: 140px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+
+}
+#fifth {
+    background-image: url('img/char.png');
+    height: 50px;
+    width: 160px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+
+}
+
+.empty {
+
+    display: inline-block;
+    height: 180px;
+    width: 180px;
+    margin: 10px;
+    border: 3px salmon solid;
+    background-color: aliceblue;
+}
+
+.hold {
+    border: solid #ccc 4px;
+
+}
+.hover {
+    background: #f4f4f4;
+    border-style: dashed;
+}
+
+.invisible {
+    display: none;
+}
